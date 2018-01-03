@@ -1,0 +1,320 @@
+html,
+body {
+    height: 100%;
+    color: #262626;
+    text-align: left;
+    font-family: Arial;
+}
+
+#cover {
+    width: 100%;
+    height: 100%;
+    display: table;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cover:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#cover .middle {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+#cover .middle .l-panel {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 320px;
+    max-width: 560px;
+    margin-bottom: 28px;
+    background-color: #fff;
+}
+
+
+/*============= LOGO =============*/
+
+#cover .logo {
+    display: block;
+    padding: 0 20px;
+}
+
+#cover .logo>a {
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #00b75f;
+    font-style: italic;
+    padding: 16px 0;
+    display: inline-block;
+}
+
+#cover .logo a:hover {
+    text-decoration: none;
+}
+
+
+/*======= LOGIN - REGISTER =======*/
+
+#cover .logo .pull-right a {
+    font-size: 15px;
+    padding: 22px 12px 21px;
+    display: inline-block;
+}
+
+#cover .logo .pull-right a:focus {
+    text-decoration: none;
+}
+
+#cover .logo .pull-right .active {
+    border-bottom: 2px solid #00b75f;
+    color: #00b75f;
+}
+
+#cover .logo .pull-right .de-active {
+    color: #222;
+}
+
+#cover .logo .pull-right .de-active:hover {
+    color: #00b75f;
+}
+
+
+/*========== PANEL FORM ===========*/
+
+#cover .m-panel {
+    display: block;
+    min-height: 420px;
+    background-color: #f6f7fb;
+    padding: 20px;
+}
+
+#cover .m-panel h3 {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 300;
+    color: #000;
+}
+
+#cover .m-panel .error {
+    color: #ea0000;
+    margin-bottom: 20px;
+    font-size: 15px;
+    height: 20px;
+}
+
+#cover .m-panel .error-register {
+    color: #ff0000;
+    margin-bottom: 10px;
+    font-size: 15px;
+    height: 20px;
+}
+
+#cover .m-panel form {
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+#cover .m-panel form .input-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#cover .m-panel form .input-group-addon {
+    border: 0px;
+    background-color: transparent;
+    border-radius: 0px !important;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+#cover .m-panel form .input-group-addon i {
+    font-size: 15px;
+    color: #00b75f;
+}
+
+#cover .m-panel form .form-control {
+    border: 0px;
+    font-size: 15px;
+    box-shadow: none;
+    padding-left: 5px;
+    border-bottom: 1px solid #d6d6d6;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    background-color: transparent;
+}
+
+@-webkit-keyframes autofill {
+    to {
+        color: #222;
+        background: transparent;
+    }
+}
+
+#cover .m-panel input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+
+
+/*============= BUTTON =============*/
+
+#cover .m-panel form .btn-login {
+    width: 50%;
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 15px;
+    margin-top: 8px;
+    border-radius: 20px;
+    border: 1px solid #00b75f;
+    background-color: #00b75f;
+}
+
+#cover .m-panel form .btn-login:hover {
+    transition: 0.5s;
+    background-color: rgba(0, 161, 84, 0.8);
+    border: 1px solid rgba(0, 161, 84, 0.8);
+}
+
+#cover .m-panel form .btn-login:focus {
+    outline: none;
+    background-color: rgba(0, 161, 84, 0.8);
+    border: 1px solid rgba(0, 161, 84, 0.8);
+}
+
+#cover .m-panel form p a {
+    color: #00b75f;
+    font-size: 14px;
+}
+
+#cover .m-panel form p a:hover,
+#cover .m-panel form p a:focus {
+    color: rgba(0, 168, 87, 0.8);
+    text-decoration: none;
+}
+
+#cover .m-panel form .f-register {
+    display: none;
+}
+
+#cover .m-panel form .f-login {
+    display: none;
+}
+
+#cover .m-panel form p i {
+    color: rgba(0, 168, 87, 0.8);
+    font-size: 16px;
+}
+
+
+/*============= ROLE =============*/
+
+#cover .m-panel span {
+    font-size: 14px;
+}
+
+#cover .m-panel span a {
+    color: rgba(0, 168, 87, 0.8);
+}
+
+#cover .m-panel span a:hover,
+#cover .m-panel span a:focus {
+    color: rgba(1, 129, 67, 0.8);
+    text-decoration: none;
+}
+
+#cover .m-panel span a:focus {
+    text-decoration: none !important;
+    outline: none;
+}
+
+
+/*============= FOOTER =============*/
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+footer p {
+    margin: 6px 15px;
+    text-align: right;
+    color: rgb(211, 211, 211);
+    font-size: 12px;
+}
+
+footer p a {
+    color: #B6B6B6;
+}
+
+footer p a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p a:focus {
+    outline: none;
+    text-decoration: none;
+    color: #B6B6B6;
+}
+
+
+/*============= RESPONSIVE =============*/
+
+@media only screen and (max-width: 768px) {
+    #cover {
+        background-image: none !important;
+    }
+    #cover .middle {
+        vertical-align: top;
+        background-color: #f6f7fb;
+    }
+    #cover .middle .l-panel {
+        max-width: 100%;
+        transition: 1s;
+    }
+    #cover .logo {
+        text-align: center;
+        transition: 1s;
+    }
+    #cover .logo>a {
+        padding: 16px 15px;
+    }
+    #cover .m-panel {
+        margin-top: 0;
+        transition: 1s;
+    }
+    #cover .func {
+        display: none;
+    }
+    #cover .m-panel form .f-register {
+        display: block;
+        transition: 1s;
+    }
+    #cover .m-panel form .f-login {
+        display: block;
+        transition: 1s;
+    }
+    footer {
+        background-color: transparent;
+        transition: 1s;
+    }
+    footer p {
+        color: #8c8c8c;
+    }
+    footer p a {
+        color: #8c8c8c;
+    }
+}

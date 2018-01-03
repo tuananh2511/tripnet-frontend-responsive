@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TRIPNET</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+
+<body>
+    <section id="cover" style="background-image: url(img/login.jpg);">
+        <div class="overlay"></div>
+        <div class="middle">
+            <div class="l-panel">
+                <div class="logo"><a href=""> TRIPNET </a>
+                    <div class="func pull-right">
+                        <a href="login.html" class="active"> Đăng nhập </a>
+                        <a href="register.html" class="de-active"> Đăng ký </a>
+                    </div>
+                </div>
+                <div class="m-panel text-center">
+                    <h3>Chào mừng trở lại!</h3>
+                    <p class="error">
+                        Thong bao!
+                    </p>
+                    <form method="POST" action="Login">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </span>
+                            <input type="email" name="email" placeholder="Nhập email" class="form-control">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-key" aria-hidden="true"></i>
+                            </span>
+                            <input type="password" name="password" placeholder="Nhập mật khẩu" class="form-control">
+                        </div>
+                        <div class="input-group text-center">
+                            <button type="submit" name="" class="btn-login">
+                                <i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;
+                                Đăng nhập
+                            </button>
+                        </div>
+                        <div class="input-group">
+                            <p>
+                                <i class="fa fa-lock" aria-hidden="true"></i>&nbsp;
+                                <a href="forgotPassword.html">Quên mật khẩu?</a>
+                            </p>
+                            <p class="f-register">
+                                <span>Chưa có tài khoản?&nbsp;</span>
+                                <a href="register.html">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Đăng ký
+                                </a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Điều khoản dịch vụ</h4>
+                </div>
+                <div class="modal-body" style="font-size: 15px;">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            <a href="" data-toggle="modal" data-target="#myModal">Điều khoản sự dụng</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ©2017 Trip Net
+        </p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

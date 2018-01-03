@@ -1,0 +1,414 @@
+/*===================== RIGHT SIDE =====================*/
+
+
+/* TAB MENU */
+
+.tab-menu {
+    padding-top: 30px;
+}
+
+.tab-menu .my-profile {
+    font-size: 50px;
+    margin-top: -116px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.05;
+    letter-spacing: 5px;
+    padding-bottom: 3px;
+}
+
+.tab-menu .my-profile span {
+    font-size: 100px;
+    margin-right: -10px;
+}
+
+.tab-menu .nav>li>a {
+    font-size: 15px;
+    color: #363636;
+}
+
+.tab-menu .nav-tabs {
+    margin-bottom: 15px;
+}
+
+.tab-menu .nav-tabs>li>a:hover {
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    background-color: transparent;
+    color: #00bd61;
+}
+
+.tab-menu .nav>li>a>i {
+    width: 20px;
+}
+
+.nav-tabs.nav-justified>.active>a,
+.nav-tabs.nav-justified>.active>a:focus,
+.nav-tabs.nav-justified>.active>a:hover {
+    border: 1px solid #c3c3c3;
+}
+
+@media (min-width: 768px) {
+    .nav-tabs.nav-justified>.active>a,
+    .nav-tabs.nav-justified>.active>a:focus,
+    .nav-tabs.nav-justified>.active>a:hover {
+        border-bottom-color: #fff;
+    }
+    .nav-tabs.nav-justified>li>a {
+        border-bottom: 1px solid #c3c3c3;
+    }
+}
+
+.tab-menu .nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    color: #00bd61;
+    background-color: #fff;
+}
+
+.my-profile {
+    background: linear-gradient(to right, #ffffff 0%, #ffffff 15%, #ffffff 35%, #ffffff 50%, #ffffff 85%, #ffdd00 90%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: color-text 8s linear infinite;
+}
+
+@keyframes color-text {
+    0% {
+        background-position: 0px 0px;
+    }
+    50% {
+        background-position: 600px 0px;
+    }
+    100% {
+        background-position: 0px 0px;
+    }
+}
+
+
+/* TAB DASHBOARD */
+
+.tab-menu .label-dashboard {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 13px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+.tab-menu #dashboard .tile {
+    position: relative;
+    display: block;
+    padding: 10px 20px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.tab-menu #dashboard .tile .icon-total {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1;
+}
+
+.tab-menu #dashboard .tile .icon-total i {
+    font-size: 120px;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.tab-menu #dashboard .tile .number {
+    color: #fff;
+    font-size: 68px;
+    font-weight: bold;
+}
+
+.tab-menu #dashboard .tile h3 {
+    color: #fff;
+    font-size: 23px;
+    margin-top: 5px;
+    font-weight: 600;
+    margin-bottom: 0 !important;
+}
+
+.tab-menu #dashboard .tile p {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 0 !important;
+}
+
+.tab-menu #dashboard .tile.total-post {
+    background: rgb(93, 206, 0);
+}
+
+.tab-menu #dashboard .tile.total-tour {
+    background: rgb(163, 34, 195);
+}
+
+.tab-menu #dashboard hr {
+    border-top: 1px solid #e0e0e0;
+}
+
+.tab-menu .label-dashboard .panel-default>.panel-heading {
+    color: #333;
+    background-color: #ececec;
+    border-color: #c3c3c3;
+    font-size: 15px;
+    padding: 9px 15px 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.tab-menu .label-dashboard .mark1 .save-link ul {
+    padding: 0;
+    margin: 0;
+}
+
+.tab-menu .label-dashboard .mark1 .save-link ul li {
+    list-style: none;
+}
+
+.tab-menu .label-dashboard .mark1 .save-link ul li a {
+    padding: 10px 15px;
+    display: block;
+    font-size: 14px;
+    color: #337ab7;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-menu .label-dashboard .mark1 .save-link ul li a:hover {
+    color: #337ab7;
+    text-decoration: none;
+    color: #00bd61;
+}
+
+.tab-menu .label-dashboard .mark1 .save-link ul li a i {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.tab-menu .label-dashboard .mark1 .save-link ul li .more {
+    border-bottom: none;
+    text-align: right;
+}
+
+
+/* PANEL POST */
+
+.panel {
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.panel-default {
+    border-color: #c3c3c3;
+}
+
+.panel .panel-heading>i {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.profile-side .panel-success {
+    border-color: #00bd61;
+}
+
+.profile-side .panel-success>.panel-heading {
+    color: #FFF;
+    font-size: 16px;
+    padding: 8px 15px 11px;
+    background-color: #00bd61;
+    border-color: #00bd61;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+/* TAB MANAGE POST */
+
+.tab-menu .label-manage-post {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.label-manage-post hr {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.label-manage-post h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.label-manage-post .media {
+    margin-top: 15px;
+}
+
+.label-manage-post .media .media-left img {
+    border-radius: 50%;
+    width: 60px;
+}
+
+.label-manage-post .media .media-body h4 a {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #00bf39;
+}
+
+.label-manage-post .media .media-body h4 a:hover {
+    color: #1167e2;
+    text-decoration: none;
+}
+
+.label-manage-post .media .media-body p {
+    font-size: 15px;
+    margin: 0 0 5px;
+}
+
+.label-manage-post .media .media-body i {
+    margin-right: 3px;
+    margin-left: 15px;
+}
+
+.label-manage-post .media .media-body .f-size {
+    font-size: 15px;
+}
+
+.media-left,
+.media>.pull-left {
+    padding-right: 20px;
+}
+
+
+/* TAB MANAGE TOUR */
+
+.tab-menu .label-group {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.label-group h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.label-group .group-link {
+    margin-bottom: 10px;
+}
+
+.label-group .group-link .icon {
+    padding: 8px 12px 8px 0;
+    display: inline-block;
+    border-right: 3px solid #00ca67;
+}
+
+.label-group .group-link .icon i {
+    font-size: 15px;
+}
+
+.label-group .group-link a {
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+
+/* TAB SAVE LINK */
+
+.tab-menu .label-save-link {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.label-save-link h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.label-save-link .save-link {
+    margin-bottom: 10px;
+}
+
+.label-save-link .save-link .icon {
+    padding: 8px 12px 8px 0;
+    display: inline-block;
+    border-right: 3px solid #00ca67;
+}
+
+.label-save-link .save-link .icon i {
+    font-size: 15px;
+}
+
+.label-save-link .save-link a {
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+
+/*============= RESPONSIVE =============*/
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 768px) {
+    .tab-menu #dashboard .tile .number {
+        font-size: 40px !important;
+    }
+    .tab-menu #dashboard .tile h3 {
+        font-size: 20px !important;
+        font-weight: 400 !important;
+    }
+    .tab-menu #dashboard .tile .icon-total i {
+        font-size: 80px !important;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .tab-menu .my-profile {
+        font-size: 30px;
+        margin-top: -86px;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 1.05;
+        letter-spacing: 5px;
+        padding-bottom: 3px;
+    }
+    .tab-menu .my-profile span {
+        font-size: 65px;
+        margin-right: -10px;
+    }
+    /* DASHBOARD */
+    .tab-menu .label-dashboard {
+        padding-top: 0;
+    }
+    /* TAB MANAGE POST */
+    .label-manage-post h3 {
+        font-size: 20px;
+    }
+    .label-manage-post .media .media-left img {
+        width: 50px;
+    }
+    .label-manage-post .media .media-body h4 a {
+        font-size: 18px;
+    }
+    .label-manage-post .media .media-body p {
+        font-size: 14px;
+    }
+    .label-manage-post .media .media-body .f-size {
+        font-size: 14px;
+    }
+    /* TAB MANAGE TOUR */
+    .label-group h3 {
+        font-size: 20px;
+    }
+    /* TAB SAVE LINK */
+    .label-save-link h3 {
+        font-size: 20px;
+    }
+}

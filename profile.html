@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TRIP NET - Trang cá nhân</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/user-style.css">
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
+    <link rel="stylesheet" type="text/css" href="css/while-footer.css">
+</head>
+
+<body>
+    <div id="cover" style="background-image: url(img/pro.jpg);">
+        <div class="header-topbar">
+            <div class="container">
+                <ul class="pull-left">
+                    <li>
+                        <a href="#" style="border-right: 1px solid rgba(255, 255, 255, 0.3);">
+                            <i class="fa fa-phone" aria-hidden="true"></i> +024 236 255
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="pull-right sub-menu">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i> Ngôn ngữ
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu top-menu">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i> English
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i> Vietnamese
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span class="rot">|</span></li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-question-circle" aria-hidden="true"></i> Giúp đỡ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <nav id="mainNav" class="navbar navbar-default">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
+                            </button>
+                    <a class="navbar-brand page-scroll" href="index.html" style="letter-spacing: 2px; color: #00d26c;">TRIPNET</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="page-scroll" href="index.html">
+                                <i class="fa fa-home" aria-hidden="true"></i> Trang chủ
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-user-circle-o" aria-hidden="true"></i> Đinh Tuấn Anh
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu main-menu">
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#modalMyInfo">
+                                        <i class="fa fa-user" aria-hidden="true"></i> Thông tin
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#modalChangePassword">
+                                        <i class="fa fa-key" aria-hidden="true"></i> Đổi mật khẩu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-sign-out" aria-hidden="true"></i> Đăng xuất
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalMyInfo" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Thông tin cá nhân</h4>
+                </div>
+                <form action="" method="">
+                    <div class="modal-body" style="padding-top: 30px;">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label class="control-label col-sm-4" for="email">Tên hiển thị:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="email" placeholder="" name="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4" for="pwd">Họ và tên:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="pwd" placeholder="" name="pwd">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4" for="pwd">Email:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="pwd" placeholder="" name="pwd">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">&nbsp;<i class="fa fa-check" aria-hidden="true"></i> Xác nhận&nbsp;</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalChangePassword" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Đổi mật khẩu</h4>
+                </div>
+                <form action="" method="">
+                    <div class="modal-body" style="padding-top: 30px;">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label class="control-label col-sm-4" for="email">Nhập mật khẩu cũ:</label>
+                                <div class="col-sm-8">
+                                    <input type="password" class="form-control" id="oldPassword" placeholder="" name="oldPassword">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4" for="pwd">Nhập mật khẩu mới:</label>
+                                <div class="col-sm-8">
+                                    <input type="password" class="form-control" id="newPassword1" placeholder="" name="newPassword1">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4" for="pwd">Nhập lại mật khẩu mới:</label>
+                                <div class="col-sm-8">
+                                    <input type="password" class="form-control" id="newPassword2" placeholder="" name="newPassword2">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">&nbsp;<i class="fa fa-check" aria-hidden="true"></i> Xác nhận&nbsp;</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Hủy bỏ</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="" class="container">
+        <div class="col-xs-12 col-sm-3 col-md-3 profile-side">
+            <div class="profile-img">
+                <img src="img/default-user-image.png" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div class="text">
+                        <a href="">
+                            <i class="fa fa-camera-retro" aria-hidden="true"></i>Cập nhật ảnh đại diện
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="level-info">
+                <h5><strong>Họ tên: </strong>Đinh Tuấn Anh</h5>
+                <h5>
+                    <strong>Giới tính: 
+                        <i class="fa fa-mars" aria-hidden="true"></i>
+                        <i class="fa fa-venus" aria-hidden="true"></i>
+                    </strong>
+                </h5>
+            </div>
+
+            <div class="btn-post">
+                <a href="createPost.html" class="btn-create-post">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Tạo bài viết mới
+                </a>
+            </div>
+
+            <div class="btn-tour">
+                <a href="" class="btn-create-tour" data-toggle="modal" data-target="#modalCreateTour">
+                    <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Tạo chuyến đi
+                </a>
+            </div>
+
+            <div class="calendar">
+                <script src="js/calendar.js"></script>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-9 tab-menu">
+            <div class="my-profile">
+                <span>T</span>rang cá nhân
+            </div>
+
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active">
+                    <a data-toggle="tab" href="#dashboard">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#manage-post">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i> Quản lý bài đăng
+                    </a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#groups">
+                        <i class="fa fa-users" aria-hidden="true"></i> Quản lý nhóm
+                    </a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#save-link">
+                        <i class="fa fa-link" aria-hidden="true"></i> Link đã lưu
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+
+                <div id="dashboard" class="tab-pane fade in active">
+                    <div class="row label-dashboard">
+
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="tile total-post">
+                                <div class="icon-total"><i class="fa fa-files-o" aria-hidden="true"></i></div>
+                                <div class="number">30</div>
+                                <h3>Tổng số bài viết đã đăng</h3>
+                                <p>số bài viết đã đăng lên website.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="tile total-tour">
+                                <div class="icon-total"><i class="fa fa-users" aria-hidden="true"></i></div>
+                                <div class="number">30</div>
+                                <h3>Tổng số nhóm đã tạo</h3>
+                                <p>số bài viết đã đăng lên website.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row label-dashboard">
+
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <i class="fa fa-users" aria-hidden="true"></i>Link mới lưu
+                                </div>
+                                <div class="panel-body">Panel Content</div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <i class="fa fa-users" aria-hidden="true"></i>Các nhóm đã tham gia
+                                </div>
+                                <div class="panel-body">Panel Content</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="manage-post" class="tab-pane fade">
+                    <div class="col-xs-12 col-sm-12 col-md-12 label-manage-post">
+                        <h3><i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp; Các bài viết đã đăng</h3>
+
+                        <hr>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="img/default-user-image.png" class="media-object">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    <a href=""> Mộc châu - mùa nắng vàng </a>
+                                </h4>
+                                <p>Swift là một trong những dòng laptop đầu tiên được Acer nâng cấp với vi xử lý Kaby Lake, cụ thể là các phiên bản Core i đầu 8, dòng ULV nhưng được cải tiến với 4 nhân, 8 luồng hứa hẹn mang lại hiệu năng tốt hơn so với các
+                                    thế hệ trước.</p>
+                                <div class="f-size">
+                                    <i class="fa fa-eye " aria-hidden="true" style="font-size: 17px; margin-left: 0;"></i> 1225
+                                    <i class="fa fa-heart " aria-hidden="true"></i> 550
+                                    <i class="fa fa-comment " aria-hidden="true"></i> 440
+                                    <i class="fa fa-flag" aria-hidden="true"></i> 0
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="img/default-user-image.png" class="media-object">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    <a href=""> Mộc châu - mùa nắng vàng </a>
+                                </h4>
+                                <p>Swift là một trong những dòng laptop đầu tiên được Acer nâng cấp với vi xử lý Kaby Lake, cụ thể là các phiên bản Core i đầu 8, dòng ULV nhưng được cải tiến với 4 nhân, 8 luồng hứa hẹn mang lại hiệu năng tốt hơn so với các
+                                    thế hệ trước.</p>
+                                <div class="f-size">
+                                    <i class="fa fa-eye " aria-hidden="true" style="font-size: 17px; margin-left: 0;"></i> 1225
+                                    <i class="fa fa-heart " aria-hidden="true"></i> 550
+                                    <i class="fa fa-comment " aria-hidden="true"></i> 440
+                                    <i class="fa fa-flag" aria-hidden="true"></i> 0
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="img/default-user-image.png" class="media-object">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    <a href=""> Mộc châu - mùa nắng vàng </a>
+                                </h4>
+                                <p>Swift là một trong những dòng laptop đầu tiên được Acer nâng cấp với vi xử lý Kaby Lake, cụ thể là các phiên bản Core i đầu 8, dòng ULV nhưng được cải tiến với 4 nhân, 8 luồng hứa hẹn mang lại hiệu năng tốt hơn so với các
+                                    thế hệ trước.</p>
+                                <div class="f-size">
+                                    <i class="fa fa-eye " aria-hidden="true" style="font-size: 17px; margin-left: 0;"></i> 1225
+                                    <i class="fa fa-heart " aria-hidden="true"></i> 550
+                                    <i class="fa fa-comment " aria-hidden="true"></i> 440
+                                    <i class="fa fa-flag" aria-hidden="true"></i> 0
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="groups" class="tab-pane fade">
+                    <div class="col-xs-12 col-sm-12 col-md-12 label-group">
+                        <h3><i class="fa fa-users" aria-hidden="true"></i>&nbsp; Nhóm đã tạo</h3>
+
+                        <div class="group-link">
+                            <span class="icon">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </span>
+                            <a href=""> Mộc châu - mùa nắng vàng </a>
+                        </div>
+
+                        <div class="group-link">
+                            <span class="icon">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </span>
+                            <a href=""> Mộc châu - mùa nắng vàng </a>
+                        </div>
+
+                        <div class="group-link">
+                            <span class="icon">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </span>
+                            <a href=""> Mộc châu - mùa nắng vàng </a>
+                        </div>
+
+                        <div class="group-link">
+                            <span class="icon">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </span>
+                            <a href=""> Mộc châu - mùa nắng vàng </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="save-link" class="tab-pane fade">
+                    <div class="col-xs-12 col-sm-12 col-md-12 label-save-link">
+                        <h3><i class="fa fa-thumb-tack" aria-hidden="true"></i>&nbsp; Link đã lưu</h3>
+
+                        <div class="save-link">
+                            <span class="icon">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </span>
+                            <a href=""> Mộc châu - mùa nắng vàng </a>
+                        </div>
+
+                        <div class="save-link">
+                            <span class="icon">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </span>
+                            <a href=""> Mộc châu - mùa nắng vàng </a>
+                        </div>
+
+                        <div class="save-link">
+                            <span class="icon">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </span>
+                            <a href=""> Mộc châu - mùa nắng vàng </a>
+                        </div>
+
+                        <div class="save-link">
+                            <span class="icon">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </span>
+                            <a href=""> Mộc châu - mùa nắng vàng </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Begin: Footer -->
+    <footer>
+        <div class="container-fruid text-center f-social">
+            <a href="" class="btn-fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="" class="btn-gplus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            <a href="" class="btn-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="container-fruid f-info">
+            <div class="container">
+                <div class="col-xs-6 col-md-6">
+                    ©2017 TripNet
+                </div>
+                <div class="col-xs-6 col-md-6 text-right">
+                    <a href="">Điều khoản sự dụng </a>
+                    <a href="" style="padding-left: 10px;">Cookies </a>
+                </div>
+                <div class="clear-fix"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- End: Footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

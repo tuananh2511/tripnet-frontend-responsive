@@ -1,0 +1,58 @@
+/*================== FOOTER ===================*/
+
+footer {
+    background-color: #f1f1f1;
+    color: #000;
+    font-size: 15px;
+}
+
+footer .f-social {
+    padding: 40px;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+footer .f-social a {
+    border: none;
+    margin: 0 15px;
+}
+
+footer .f-social a:hover {
+    opacity: 0.8;
+}
+
+footer .f-social a i {
+    font-size: 25px;
+    width: 34px;
+    text-align: center;
+    color: rgb(107, 107, 107);
+}
+
+footer .f-info {
+    padding: 13px 0;
+    background-color: #d4d4d4;
+    font-size: 13px;
+}
+
+footer .f-info a {
+    color: #000;
+}
+
+footer .f-info a:hover {
+    text-decoration: none;
+    color: #00bd61;
+}
+
+.clear-fix {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+@media only screen and (max-width: 520px) {
+    footer .f-social {
+        padding: 20px;
+    }
+    footer .f-social a i {
+        font-size: 20px;
+    }
+}
