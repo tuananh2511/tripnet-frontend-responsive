@@ -72,9 +72,9 @@
             <div class="container">
 
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
-                            </button>
+                    <button type="button" onclick="down()" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
+                    </button>
                     <a class="navbar-brand page-scroll" href="index.html" style="letter-spacing: 2px; color: #00d26c;">TRIPNET</a>
                 </div>
 
@@ -85,6 +85,16 @@
                                 <i class="fa fa-home" aria-hidden="true"></i> Trang chủ
                             </a>
                         </li>
+                        <li>
+                            <a class="page-scroll" href="#">
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Tạo bài viết
+                            </a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#">
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Tạo chuyến đi
+                            </a>
+                        </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                                 <i class="fa fa-user-circle-o" aria-hidden="true"></i> Đinh Tuấn Anh
@@ -93,7 +103,7 @@
                             <ul class="dropdown-menu main-menu">
                                 <li>
                                     <a href="#" data-toggle="modal" data-target="#modalMyInfo">
-                                        <i class="fa fa-user" aria-hidden="true"></i> Thông tin
+                                        <i class="fa fa-user" aria-hidden="true"></i> Trang cá nhân
                                     </a>
                                 </li>
                                 <li>
@@ -203,7 +213,7 @@
     </div>
 
 
-    <div id="" class="container">
+    <div id="content" class="container">
         <div class="col-xs-12 col-sm-3 col-md-3 profile-side">
             <div class="profile-img">
                 <img src="img/default-user-image.png" alt="Avatar" class="image">
@@ -485,6 +495,11 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        function down() {
+            document.getElementById("cover").style.height = "360px";
+        }
+    </script>
 </body>
 
 </html>

@@ -26,6 +26,7 @@ body {
 }
 
 #cover {
+    transition: 0.5s;
     height: 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -469,8 +470,17 @@ body {
         margin-right: 0;
         margin-left: 0;
     }
+    #cover {
+        height: 300px;
+    }
+    #cover:before {
+        height: 300px;
+    }
     #cover .header-topbar>.container {
         padding-left: 0;
+    }
+    .navbar-default {
+        border-bottom: none;
     }
     .navbar-brand {
         padding: 25px 15px;
@@ -488,6 +498,7 @@ body {
     #mainNav .dropdown-menu {
         border: none;
         border-radius: 0 !important;
+        padding: 0;
     }
     #mainNav .nav>li>a {
         padding: 3px 20px;
